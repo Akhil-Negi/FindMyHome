@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+<div class="container Mycontainer theme-clr" >
+<hr>
+
+
+
+
+
+<div class="card  card-bd"  >
+    <div id="login-box" class="col-md-12">
+        <form  class="form container" [formGroup]="userDetails" (ngSubmit)="onSubmit(userDetails)">
+            <h3 class="text-center mt-4"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp; Sign in</h3>
+            
+
+            
+            <div class="form-group">
+                <label >Email:</label><br>
+                <input type="text"  class="form-control mb-3" formControlName="email">
+            </div>
+            <div class="form-group">
+                <label >Password:</label><br>
+                <input type="text"  class="form-control mb-3" formControlName="password">
+            </div>
+            <div class="form-group">
+                <label  class=""><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                <button type="submit" class="btn btn-primary btn-block"> submit  </button>
+
+                <!-- <input type="submit"  class="btn btn-info btn-md mb-3" value="submit"> -->
+            </div>
+            <div id="register-link" class="text-right mb-3">
+                <p class="d-flex justify-content-start">Dont have an account?....&nbsp;&nbsp;&nbsp; <a routerLink="/register">Sign up</a> </p> 
+                <p class="d-flex justify-content-start">Forgot Password?....&nbsp;&nbsp;&nbsp;<a routerLink="/forgotpassword">click here </a> </p>                                                                 
+                                                                
+            </div>
+        </form>
+
+        
+    </div>
+</div> <!-- card.// -->
+
+</div> 
+<!--container end.//-->
+
+<br><br>
